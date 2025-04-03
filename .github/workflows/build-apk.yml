@@ -37,7 +37,7 @@ jobs:
         run: |
           curl --location --request PUT "https://app.testsigma.com/api/v1/uploads/622" \
           --header "Authorization: Bearer ${{ secrets.TESTSIGMA_API_KEY }}" \
-          --form "file=@app/build/outputs/apk/debug/app-debug.apk" \
+          --form "fileContent=@app/build/outputs/apk/debug/app-debug.apk" \
           --form "applicationId=215" \
           --form "version=123" \
           --form "uploadType=APK" \
