@@ -35,10 +35,9 @@ jobs:
 
       - name: Upload APK to Testsigma
         run: |
-          curl --location --request PUT "https://app.testsigma.com/api/v1/uploads/577" \
+          curl --location --request PUT "https://app.testsigma.com/api/v1/uploads/622" \
           --header "Authorization: Bearer ${{ secrets.TESTSIGMA_API_KEY }}" \
           --form "file=@app/build/outputs/apk/debug/app-debug.apk" \
-          --form "name=MyApp" \
           --form "applicationId=215" \
           --form "version=123" \
           --form "uploadType=APK" \
